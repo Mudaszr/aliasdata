@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alias Data | Data Recovery in Bengaluru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Alias Data</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Professional Data Recovery in Bengaluru</h2>
+    <p>We recover deleted, corrupted, formatted and damaged data from HDD, SSD, Mobile, Pen Drive & more.</p>
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX">Chat on WhatsApp</a>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>HDD / SSD Recovery</h3>
+        <p>Recover lost, deleted or corrupted hard drive data quickly.</p>
+    </div>
+    <div class="card">
+        <h3>Mobile Data Recovery</h3>
+        <p>We recover photos, videos, chats, contacts and more.</p>
+    </div>
+    <div class="card">
+        <h3>Cyber Forensics</h3>
+        <p>Expert forensic analysis and data restoration for legal cases.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Alias Data | Bengaluru</p>
+</footer>
+
+</body>
+</html>
