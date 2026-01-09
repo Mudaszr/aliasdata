@@ -47,9 +47,24 @@ nav a {
     border-radius: 6px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    min-height: calc(100vh - 80px); /* 80px = footer height */
+}
+
 footer {
-    text-align: center;
-    padding: 15px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #111;
     color: white;
+    margin-top: 20px;
 }
+
+
