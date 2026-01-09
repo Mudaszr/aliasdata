@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alias Data Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Alias Data</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<h2 class="page-title">Our Data Recovery Services</h2>
+
+<section class="list">
+    <ul>
+        <li>Hard Disk Data Recovery</li>
+        <li>SSD Data Recovery</li>
+        <li>Mobile Data Recovery</li>
+        <li>RAID / NAS Recovery</li>
+        <li>Memory Card / Pen Drive Recovery</li>
+        <li>CCTV Footage Recovery</li>
+        <li>Ransomware File Recovery</li>
+        <li>Cyber Forensics Investigation</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Alias Data</p>
+</footer>
+
+</body>
+</html>
