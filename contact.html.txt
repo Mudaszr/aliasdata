@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Alias Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Alias Data</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<h2 class="page-title">Contact Us</h2>
+
+<section class="contact-section">
+    <p><strong>Phone:</strong> +91 8431111867</p>
+    <p><strong>Email:</strong> support@aliasdata.in</p>
+    <p><strong>Location:</strong> Bengaluru, Karnataka</p>
+
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX">Chat on WhatsApp</a>
+    <a class="btn" href="https://forms.gle/your-google-form-link">Book Appointment</a>
+</section>
+
+<footer>
+    <p>© 2026 Alias Data</p>
+</footer>
+
+</body>
+</html>
