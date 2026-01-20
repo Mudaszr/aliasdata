@@ -1,70 +1,130 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background: #f7f7f7;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background: #111;
-    color: white;
-    padding: 15px;
-    text-align: center;
+body {
+    color: #1a1a1a;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav a {
-    color: #ddd;
-    margin: 0 15px;
+    margin-left: 20px;
     text-decoration: none;
+    color: #333;
+    font-weight: 500;
 }
 
+/* Hero */
 .hero {
-    padding: 60px;
+    background: linear-gradient(135deg, #050720, #0b0f3a);
+    color: #ffffff;
+    padding: 80px 0;
     text-align: center;
-    background: #0a0a23;
-    color: white;
 }
 
+.hero h2 {
+    font-size: 2.1rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 900px;
+    margin: 0 auto 25px;
+}
+
+/* Button */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
     background: #25d366;
-    color: white;
-    border-radius: 5px;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 6px;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Services */
 .features {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+    padding: 60px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    margin: 10px;
-    width: 250px;
-    border-radius: 6px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.card h3 {
+    margin-bottom: 15px;
 }
 
-.page-wrapper {
-    min-height: calc(100vh - 80px); /* 80px = footer height */
+/* Location */
+.location {
+    background: #f8f9fb;
+    padding: 60px 0;
+    text-align: center;
 }
 
+.location p {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Footer */
 footer {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #111;
-    color: white;
-    margin-top: 20px;
+    background: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
 
+    .hero h2 {
+        font-size: 1.7rem;
+    }
+}
