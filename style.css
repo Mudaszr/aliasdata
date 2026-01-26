@@ -272,7 +272,24 @@ footer {
     align-items: right;
     }
 
+    /* ===== FORCE HEADER LAYOUT ===== */
+
+    .header-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    }
+
+    .nav-menu {
+    margin-left: auto;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    }
+
+
 }
+
 
 
 
