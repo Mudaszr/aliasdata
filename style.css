@@ -127,4 +127,26 @@ footer {
     .hero h2 {
         font-size: 1.7rem;
     }
+
+/* Social Media Icons */
+
+.social-icons {
+    margin-top: 10px;
+    font-size: 18px;
 }
+
+.social-icons a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #25D366; /* WhatsApp green style */
+    transform: scale(1.2);
+}
+
+
+}
+
