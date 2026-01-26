@@ -1,296 +1,214 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Zen Dots', Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Body */
-body {
-    color: #1a1a1a;
-    background: #ffffff;
-    line-height: 1.6;
-}
+    <title>Alias Data | Data Recovery Bangalore</title>
 
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    <!-- Zen Dots Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
-/* ================= HEADER ================= */
+    <style>
 
-.site-header {
-    background: #ffffff;
-    border-bottom: 4px solid;
-    border-image: linear-gradient(90deg, #050720, #1877f2, #25D366) 1;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        /* ================= RESET ================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Zen Dots', Arial, sans-serif;
+        }
 
-.site-header .container {
-    display: flex;
-    align-items: center;
-    min-height: 70px;
-    padding: 12px 20px;
-}
+        body {
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
 
-/* Push menu to right */
-nav {
-    margin-left: 35px;
-}
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
 
-/* Logo */
+        /* ================= HEADER ================= */
 
-.logo-area {
-    display: flex;
-    align-items: center;
-}
+        .site-header {
+            background: #ffffff;
+            border-bottom: 4px solid;
+            border-image: linear-gradient(90deg,#050720,#1877f2,#25D366) 1;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-.site-logo {
-    height: 60px;        /* Bigger */
-    max-width: 260px;   /* Wider */
-    width: auto;
-    object-fit: contain;
-    transition: 0.3s ease;
-}
+        .header-bar {
+            display: flex;
+            align-items: center;
+            min-height: 80px;
+        }
 
+        /* Logo */
 
-.site-logo:hover {
-    filter: drop-shadow(0 0 6px #1877f2);
-}
+        .logo-area {
+            display: flex;
+            align-items: center;
+        }
 
-/* Navigation */
+        .site-logo {
+            height: 60px;
+            max-width: 260px;
+            width: auto;
+            object-fit: contain;
+            transition: 0.3s;
+        }
 
-nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #222;
-    font-weight: 600;
-    position: relative;
-    padding-bottom: 4px;
-    transition: 0.3s;
-}
+        .site-logo:hover {
+            filter: drop-shadow(0 0 6px #1877f2);
+        }
 
-/* Hover Line */
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background: #1877f2;
-    transition: 0.3s;
-}
+        /* Navigation (RIGHT SIDE) */
 
-nav a:hover::after {
-    width: 100%;
-}
+        .nav-menu {
+            margin-left: auto;   /* PUSH TO RIGHT */
+            display: flex;
+            gap: 35px;
+        }
 
-nav a:hover {
-    color: #1877f2;
-}
+        .nav-menu a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 4px;
+            transition: 0.3s;
+        }
 
-/* ================= HERO ================= */
+        .nav-menu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background: #1877f2;
+            transition: 0.3s;
+        }
 
-.hero {
-    background: linear-gradient(135deg, #050720, #0b0f3a);
-    color: #ffffff;
-    padding: 80px 0;
-    text-align: center;
-}
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
 
-.hero h2 {
-    font-size: 2.1rem;
-    margin-bottom: 15px;
-}
+        .nav-menu a:hover {
+            color: #1877f2;
+        }
 
-.hero p {
-    max-width: 900px;
-    margin: 0 auto 25px;
-}
+        /* ================= HERO ================= */
 
-/* Button */
+        .hero {
+            background: linear-gradient(135deg,#050720,#0b0f3a);
+            color: white;
+            padding: 90px 0;
+            text-align: center;
+        }
 
-.btn {
-    display: inline-block;
-    background: #25d366;
-    color: #ffffff;
-    padding: 14px 28px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
 
-.btn:hover {
-    transform: scale(1.05);
-}
+        .hero p {
+            max-width: 900px;
+            margin: auto;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
 
-/* ================= SERVICES ================= */
+        .btn {
+            background: #25d366;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
 
-.features {
-    padding: 60px 0;
-}
+        .btn:hover {
+            transform: scale(1.05);
+        }
 
-.features h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
+        /* ================= MOBILE ================= */
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-}
+        @media (max-width: 768px) {
 
-.card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
+            .nav-menu {
+                display: none;
+            }
 
-.card:hover {
-    transform: translateY(-5px);
-}
+            .site-logo {
+                height: 48px;
+                max-width: 200px;
+            }
 
-.card h3 {
-    margin-bottom: 15px;
-}
+            .hero h1 {
+                font-size: 1.7rem;
+            }
 
-/* ================= LOCATION ================= */
+        }
 
-.location {
-    background: #f8f9fb;
-    padding: 60px 0;
-    text-align: center;
-}
+    </style>
 
-.location p {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* ================= FOOTER ================= */
-
-footer {
-    background: #0a0a0a;
-    color: #ffffff;
-    text-align: center;
-    padding: 25px 15px;
-}
-
-/* ================= SOCIAL ICONS ================= */
-
-.social-icons {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    color: white;
-    font-size: 16px;
-}
-
-.social-icons .social-btn {
-    width: 48px;
-    height: 48px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-    color: #fff;
-    font-size: 22px;
-
-    text-decoration: none;
-
-    transition: all 0.3s ease;
-}
-
-/* Instagram */
-.social-icons .instagram {
-    background: linear-gradient(45deg,
-        #feda75,
-        #fa7e1e,
-        #d62976,
-        #962fbf,
-        #4f5bd5
-    );
-}
-
-/* Facebook */
-.social-icons .facebook {
-    background: #1877f2;
-}
-
-/* WhatsApp */
-.social-icons .whatsapp {
-    background: #25D366;
-}
-
-/* Hover */
-.social-icons .social-btn:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 12px rgba(255,255,255,0.4);
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-
-    nav {
-        display: none;
-    }
-
-    .hero h2 {
-        font-size: 1.7rem;
-    }
-
-    .site-logo {
-    height: 48px;
-    max-width: 200px;
-    }
-/* ===== Header Layout Fix ===== */
-
-    .header-flex {
-    display: flex;
-    align-items: right;
-    width: 100%;
-    }
-
-    .main-nav {
-    margin-left: auto;
-    display: flex;
-    align-items: right;
-    }
-
-    /* ===== FORCE HEADER LAYOUT ===== */
-
-    .header-bar {
-    display: flex;
-    align-items: right;
-    width: 100%;
-    }
-
-    .nav-menu {
-    margin-left: auto;
-    display: flex;
-    gap: 35px;
-    align-items: right;
-    }
+</head>
+<body>
 
 
-}
+<!-- ================= HEADER ================= -->
+
+<header class="site-header">
+    <div class="container header-bar">
+
+        <!-- Logo -->
+        <div class="logo-area">
+            <!-- CHANGE logo.png IF YOUR FILE NAME IS DIFFERENT -->
+            <img src="logo.png" alt="Alias Data" class="site-logo">
+        </div>
+
+        <!-- Menu -->
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
 
 
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+    <div class="container">
+
+        <h1>
+            Data Recovery, Cyber Forensics & Cyber Hygiene Audits in Bangalore
+        </h1>
+
+        <p>
+            Alias Data specializes in secure data recovery, cyber forensic investigations,
+            and cyber hygiene audits for individuals, businesses, and legal cases across
+            Bangalore (Bengaluru).
+        </p>
+
+        <a href="https://wa.me/918431111867" class="btn">
+            Chat on WhatsApp
+        </a>
+
+    </div>
+</section>
 
 
-
+</body>
+</html>
