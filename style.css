@@ -48,15 +48,6 @@
             min-height: 80px;
         }
 
-        /* ===== FULL WIDTH HEADER ===== */
-
-        .full-header {
-         width: 100%;
-         padding: 0 40px;   /* Side spacing */
-         display: flex;
-         align-items: center;
-        }
-
         /* Logo */
 
         .logo-area {
@@ -221,4 +212,5 @@
 
 </body>
 </html>
+
 
