@@ -1,187 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alias Data | Data Recovery Bangalore</title>
 
-    <title>Data Recovery & Cyber Forensics in Bangalore | Alias Data</title>
+<!-- Zen Dots Font -->
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
-    <!-- Zen Dots Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+<style>
 
-    <!-- SEO -->
-    <meta name="description" content="Alias Data provides professional data recovery, cyber forensics, and cyber hygiene audits in Bangalore (Bengaluru). HDD, SSD, mobile recovery with secure diagnostics.">
-    <meta name="keywords" content="data recovery Bangalore, cyber forensics Bangalore, cyber hygiene audit Bangalore, HDD recovery, SSD recovery, mobile data recovery">
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Zen Dots',Arial,sans-serif;
+}
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.aliasdata.in/">
+/* ================= BODY ================= */
+body{
+    background:#fff;
+    color:#1a1a1a;
+    line-height:1.6;
+}
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Data Recovery & Cyber Forensics in Bangalore | Alias Data">
-    <meta property="og:description" content="Professional data recovery, cyber forensics and cyber hygiene audits in Bangalore. Secure, confidential and reliable services.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.aliasdata.in/">
-    <meta property="og:image" content="https://www.aliasdata.in/og-image.jpg">
+/* ================= NORMAL CONTAINER ================= */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
 
-    <!-- Social Profiles -->
-    <meta property="og:see_also" content="https://www.instagram.com/aliasdata">
-    <meta property="og:see_also" content="https://www.facebook.com/share/188qPqZTtc/">
+/* ================= HEADER ================= */
 
-    <meta name="robots" content="index, follow">
+.site-header{
+    background:#fff;
+    border-bottom:4px solid;
+    border-image:linear-gradient(90deg,#050720,#1877f2,#25D366) 1;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+/* FULL WIDTH HEADER BAR */
+.header-bar{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between; /* KEY */
+    padding:0 30px;
+    min-height:80px;
+}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+/* Logo */
+.logo-area{
+    display:flex;
+    align-items:center;
+}
 
+.site-logo{
+    height:60px;
+    max-width:260px;
+    object-fit:contain;
+    transition:0.3s;
+}
+
+.site-logo:hover{
+    filter:drop-shadow(0 0 6px #1877f2);
+}
+
+/* Menu */
+.nav-menu{
+    display:flex;
+    gap:35px;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    position:relative;
+    padding-bottom:4px;
+    transition:0.3s;
+}
+
+.nav-menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0%;
+    height:2px;
+    background:#1877f2;
+    transition:0.3s;
+}
+
+.nav-menu a:hover::after{
+    width:100%;
+}
+
+.nav-menu a:hover{
+    color:#1877f2;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:linear-gradient(135deg,#050720,#0b0f3a);
+    color:#fff;
+    padding:90px 0;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:2.4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#25d366;
+    color:#fff;
+    padding:14px 32px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* ================= SERVICES ================= */
+
+.features{
+    padding:70px 0;
+}
+
+.features h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0a0a0a;
+    color:#fff;
+    text-align:center;
+    padding:25px 15px;
+}
+
+.social-icons{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.social-btn{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    color:#fff;
+    font-size:22px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.instagram{
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+
+.facebook{
+    background:#1877f2;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.social-btn:hover{
+    transform:scale(1.2);
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .nav-menu{
+        display:none;
+    }
+
+    .site-logo{
+        height:45px;
+    }
+
+    .hero h1{
+        font-size:1.6rem;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header class="site-header">
-    <div class="container header-bar">
-        <!-- Logo -->
-        <div class="logo-area">
-            <img src="logo.png" class="site-logo" alt="Alias Data">
-        </div>
+<div class="header-bar">
 
-        <!-- Nav -->
-        <nav class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
+    <div class="logo-area">
+        <!-- Change logo.png if needed -->
+        <img src="logo.png" class="site-logo" alt="Alias Data">
     </div>
 
+    <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</div>
 </header>
 
+<!-- ================= HERO ================= -->
 
 <section class="hero">
-    <div class="container">
-        <h2>Data Recovery, Cyber Forensics & Cyber Hygiene Audits in Bangalore</h2>
+<div class="container">
 
-        <p>
-            Alias Data specializes in secure data recovery, cyber forensic investigations,
-            and cyber hygiene audits for individuals, businesses, and legal cases across
-            Bangalore (Bengaluru).
-        </p>
+<h1>
+Data Recovery, Cyber Forensics & Cyber Hygiene Audits in Bangalore
+</h1>
 
-        <a class="btn" href="https://wa.me/918431111867">Chat on WhatsApp</a>
-    </div>
+<p>
+Alias Data specializes in secure data recovery, cyber forensic investigations,
+and cyber hygiene audits for individuals, businesses, and legal cases.
+</p>
+
+<a href="https://wa.me/918431111867" class="btn">
+Chat on WhatsApp
+</a>
+
+</div>
 </section>
+
+<!-- ================= SERVICES ================= -->
 
 <section class="features">
-    <div class="container">
+<div class="container">
 
-        <h2>Our Services in Bangalore</h2>
+<h2>Our Services in Bangalore</h2>
 
-        <div class="services-grid">
+<div class="services-grid">
 
-            <div class="card">
-                <h3>Hard Drive (HDD) & SSD Data Recovery</h3>
-                <p>
-                    Recovery of lost, deleted, formatted, corrupted, or physically damaged
-                    hard drives and SSDs using advanced recovery techniques.
-                </p>
-            </div>
+<div class="card">
+<h3>HDD & SSD Recovery</h3>
+<p>Advanced recovery for damaged, deleted, or corrupted drives.</p>
+</div>
 
-            <div class="card">
-                <h3>Mobile Data Recovery</h3>
-                <p>
-                    Secure recovery of photos, videos, contacts, documents, and application
-                    data from Android and supported mobile devices.
-                </p>
-            </div>
+<div class="card">
+<h3>Mobile Recovery</h3>
+<p>Recover photos, videos, contacts and app data securely.</p>
+</div>
 
-            <div class="card">
-                <h3>Cyber Forensics & Incident Analysis</h3>
-                <p>
-                    Professional cyber forensic investigations for fraud, data breaches,
-                    unauthorized access, and legal or corporate evidence requirements.
-                </p>
-            </div>
+<div class="card">
+<h3>Cyber Forensics</h3>
+<p>Professional investigations for fraud and legal cases.</p>
+</div>
 
-            <div class="card">
-                <h3>Cyber Hygiene Audits & Security Assessment</h3>
-                <p>
-                    Comprehensive cyber hygiene audits to identify vulnerabilities, unsafe
-                    practices, malware risks, and data exposure across systems and networks.
-                </p>
-            </div>
+<div class="card">
+<h3>Cyber Hygiene</h3>
+<p>Security audits to detect vulnerabilities and risks.</p>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 </section>
 
-
-<section class="location">
-    <div class="container">
-
-        <h2>Trusted Data & Cyber Security Partner in Bangalore</h2>
-
-        <p>
-            Alias Data supports individuals, startups, and organizations in Bangalore with
-            confidential data recovery, cyber forensics, and cyber hygiene assessments.
-            Free diagnostics and transparent reporting available.
-        </p>
-
-    </div>
-</section>
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <p>© 2026 Alias Data | Data Recovery & Cyber Forensics in Bangalore, India</p>
+<p>© 2026 Alias Data | Bangalore, India</p>
 
-    <p class="social-icons">
+<div class="social-icons">
 
-        Follow Us:
+<a href="#" class="social-btn instagram">📷</a>
+<a href="#" class="social-btn facebook">f</a>
+<a href="https://wa.me/918431111867" class="social-btn whatsapp">💬</a>
 
-        <a href="https://www.instagram.com/aliasdata"
-           target="_blank"
-           class="social-btn instagram"
-           aria-label="Instagram">
-
-            <i class="fab fa-instagram"></i>
-
-        </a>
-
-        <a href="https://www.facebook.com/share/188qPqZTtc/"
-           target="_blank"
-           class="social-btn facebook"
-           aria-label="Facebook">
-
-            <i class="fab fa-facebook-f"></i>
-
-        </a>
-        
-       <a href="https://wa.me/918431111867"
-           target="_blank"
-           class="social-btn whatsapp"
-           aria-label="WhatsApp">
-           
-            <i class="fab fa-whatsapp"></i>
-       
-       </a>
-
-
-    </p>
+</div>
 
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
