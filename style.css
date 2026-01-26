@@ -1,216 +1,253 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', Arial, Helvetica, sans-serif;
+}
 
-    <title>Alias Data | Data Recovery Bangalore</title>
+/* Body */
+body {
+    color: #1a1a1a;
+    background: #ffffff;
+    line-height: 1.6;
+}
 
-    <!-- Zen Dots Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <style>
+/* ================= HEADER ================= */
 
-        /* ================= RESET ================= */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Zen Dots', Arial, sans-serif;
-        }
+.site-header {
+    background: #ffffff;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(90deg, #050720, #1877f2, #25D366) 1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        body {
-            background: #ffffff;
-            color: #1a1a1a;
-            line-height: 1.6;
-        }
+.site-header .container {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    padding: 12px 20px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 20px;
-        }
+/* Push menu to right */
+nav {
+    margin-left: 35px;
+}
 
-        /* ================= HEADER ================= */
+/* Logo */
 
-        .site-header {
-            background: #ffffff;
-            border-bottom: 4px solid;
-            border-image: linear-gradient(90deg,#050720,#1877f2,#25D366) 1;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+.logo-area {
+    display: flex;
+    align-items: center;
+}
 
-        .header-bar {
-            display: flex;
-            align-items: center;
-            min-height: 80px;
-        }
-
-        /* Logo */
-
-        .logo-area {
-            display: flex;
-            align-items: center;
-        }
-
-        .site-logo {
-            height: 60px;
-            max-width: 260px;
-            width: auto;
-            object-fit: contain;
-            transition: 0.3s;
-        }
-
-        .site-logo:hover {
-            filter: drop-shadow(0 0 6px #1877f2);
-        }
-
-        /* Navigation (RIGHT SIDE) */
-
-        .nav-menu {
-            margin-left: auto;   /* PUSH TO RIGHT */
-            display: flex;
-            gap: 35px;
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: #222;
-            font-weight: 600;
-            position: relative;
-            padding-bottom: 4px;
-            transition: 0.3s;
-        }
-
-        .nav-menu a::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 0%;
-            height: 2px;
-            background: #1877f2;
-            transition: 0.3s;
-        }
-
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
-
-        .nav-menu a:hover {
-            color: #1877f2;
-        }
-
-        /* ================= HERO ================= */
-
-        .hero {
-            background: linear-gradient(135deg,#050720,#0b0f3a);
-            color: white;
-            padding: 90px 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 900px;
-            margin: auto;
-            margin-bottom: 30px;
-            font-size: 1rem;
-        }
-
-        .btn {
-            background: #25d366;
-            color: white;
-            padding: 14px 30px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            transform: scale(1.05);
-        }
-
-        /* ================= MOBILE ================= */
-
-        @media (max-width: 768px) {
-
-            .nav-menu {
-                display: none;
-            }
-
-            .site-logo {
-                height: 48px;
-                max-width: 200px;
-            }
-
-            .hero h1 {
-                font-size: 1.7rem;
-            }
-
-        }
-
-    </style>
-
-</head>
-<body>
+.site-logo {
+    height: 60px;        /* Bigger */
+    max-width: 260px;   /* Wider */
+    width: auto;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
 
 
-<!-- ================= HEADER ================= -->
+.site-logo:hover {
+    filter: drop-shadow(0 0 6px #1877f2);
+}
 
-<header class="site-header">
-    <div class="container header-bar">
+/* Navigation */
 
-        <!-- Logo -->
-        <div class="logo-area">
-            <!-- CHANGE logo.png IF YOUR FILE NAME IS DIFFERENT -->
-            <img src="logo.png" alt="Alias Data" class="site-logo">
-        </div>
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
 
-        <!-- Menu -->
-        <nav class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+/* Hover Line */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #1877f2;
+    transition: 0.3s;
+}
 
-    </div>
-</header>
+nav a:hover::after {
+    width: 100%;
+}
 
+nav a:hover {
+    color: #1877f2;
+}
 
-<!-- ================= HERO ================= -->
+/* ================= HERO ================= */
 
-<section class="hero">
-    <div class="container">
+.hero {
+    background: linear-gradient(135deg, #050720, #0b0f3a);
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
 
-        <h1>
-            Data Recovery, Cyber Forensics & Cyber Hygiene Audits in Bangalore
-        </h1>
+.hero h2 {
+    font-size: 2.1rem;
+    margin-bottom: 15px;
+}
 
-        <p>
-            Alias Data specializes in secure data recovery, cyber forensic investigations,
-            and cyber hygiene audits for individuals, businesses, and legal cases across
-            Bangalore (Bengaluru).
-        </p>
+.hero p {
+    max-width: 900px;
+    margin: 0 auto 25px;
+}
 
-        <a href="https://wa.me/918431111867" class="btn">
-            Chat on WhatsApp
-        </a>
+/* Button */
 
-    </div>
-</section>
+.btn {
+    display: inline-block;
+    background: #25d366;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+.btn:hover {
+    transform: scale(1.05);
+}
 
-</body>
-</html>
+/* ================= SERVICES ================= */
 
+.features {
+    padding: 60px 0;
+}
 
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* ================= LOCATION ================= */
+
+.location {
+    background: #f8f9fb;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.location p {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    font-size: 16px;
+}
+
+.social-icons .social-btn {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    color: #fff;
+    font-size: 22px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* Instagram */
+.social-icons .instagram {
+    background: linear-gradient(45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+}
+
+/* Facebook */
+.social-icons .facebook {
+    background: #1877f2;
+}
+
+/* WhatsApp */
+.social-icons .whatsapp {
+    background: #25D366;
+}
+
+/* Hover */
+.social-icons .social-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 12px rgba(255,255,255,0.4);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 1.7rem;
