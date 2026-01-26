@@ -168,7 +168,7 @@ footer {
 
 /* WhatsApp */
 .social-icons .whatsapp {
-    background: #25D366;
+    background: #25D366 !important;
 }
 
 /* Hover Effect */
@@ -189,5 +189,6 @@ footer {
     }
 
 }
+
 
 
