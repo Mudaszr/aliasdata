@@ -130,23 +130,55 @@ footer {
 
 /* Social Media Icons */
 
+/* Social Media Icons - Premium Look */
+
 .social-icons {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 15px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .social-icons a {
-    margin: 0 10px;
-    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-decoration: none;
-    transition: 0.3s ease;
+    font-size: 22px;
+
+    transition: all 0.3s ease;
 }
 
+/* Instagram Gradient */
+.social-icons a.instagram {
+    background: radial-gradient(circle at 30% 30%,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+}
+
+/* Facebook Blue */
+.social-icons a.facebook {
+    background: #1877f2;
+}
+
+/* Hover Effect */
 .social-icons a:hover {
-    color: #25D366; /* WhatsApp green style */
     transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
 }
 
-
 }
+
 
