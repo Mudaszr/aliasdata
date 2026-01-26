@@ -6,11 +6,8 @@
 
 <title>Alias Data | Data Recovery Bangalore</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-<!-- Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<!-- Zen Dots -->
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,14 +16,17 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Zen Dots',Arial,sans-serif;
 }
 
+/* Body */
 body{
-    background:#fff;
-    color:#111;
-    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#1a1a1a;
+    line-height:1.6;
 }
 
+/* Container */
 .container{
     max-width:1200px;
     margin:auto;
@@ -37,45 +37,48 @@ body{
 /* ================= HEADER ================= */
 
 .site-header{
-    background:#fff;
+    background:#ffffff;
     border-bottom:4px solid;
     border-image:linear-gradient(90deg,#050720,#1877f2,#25D366) 1;
     position:sticky;
     top:0;
-    z-index:999;
+    z-index:1000;
 }
 
 .header-bar{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    height:80px;
+    min-height:75px;
 }
 
 /* Logo */
+
 .logo-area img{
-    height:60px;
+    height:55px;
 }
 
 /* Nav */
+
 .nav-menu{
     display:flex;
-    gap:35px;
+    gap:30px;
 }
 
 .nav-menu a{
-    font-family:'Zen Dots',sans-serif;
     text-decoration:none;
-    color:#111;
-    font-size:14px;
+    color:#222;
+    font-weight:600;
     position:relative;
+    padding-bottom:4px;
 }
 
+/* Hover Line */
 .nav-menu a::after{
     content:"";
     position:absolute;
     left:0;
-    bottom:-6px;
+    bottom:0;
     width:0%;
     height:2px;
     background:#1877f2;
@@ -95,32 +98,32 @@ body{
 
 .hero{
     background:linear-gradient(135deg,#050720,#0b0f3a);
-    color:#fff;
+    color:#ffffff;
+    padding:90px 0;
     text-align:center;
-    padding:100px 0;
 }
 
 .hero h1{
-    font-family:'Zen Dots',sans-serif;
-    font-size:2.4rem;
-    margin-bottom:20px;
+    font-size:2.3rem;
+    margin-bottom:15px;
 }
 
 .hero p{
     max-width:850px;
     margin:auto;
-    opacity:0.9;
+    margin-bottom:25px;
 }
+
+/* Button */
 
 .btn{
     display:inline-block;
-    margin-top:30px;
     background:#25d366;
-    color:white;
-    padding:14px 32px;
+    color:#ffffff;
+    padding:14px 28px;
     border-radius:6px;
     text-decoration:none;
-    font-weight:600;
+    font-weight:bold;
     transition:0.3s;
 }
 
@@ -131,15 +134,13 @@ body{
 
 /* ================= SERVICES ================= */
 
-.services{
-    padding:80px 0;
-    background:#f9f9fb;
+.features{
+    padding:70px 0;
 }
 
-.services h2{
+.features h2{
     text-align:center;
-    font-family:'Zen Dots',sans-serif;
-    margin-bottom:50px;
+    margin-bottom:45px;
 }
 
 .services-grid{
@@ -148,49 +149,20 @@ body{
     gap:30px;
 }
 
-/* Card */
-
 .card{
-    background:#fff;
+    background:#ffffff;
     padding:30px;
-    border-radius:15px;
+    border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.4s;
-    position:relative;
-    overflow:hidden;
-}
-
-.card::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(135deg,#050720,#0b0f3a);
-    opacity:0;
-    transition:0.4s;
-}
-
-.card:hover::before{
-    opacity:1;
-}
-
-.card *{
-    position:relative;
-    z-index:2;
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
-}
-
-.card i{
-    font-size:30px;
-    color:#25d366;
-    margin-bottom:15px;
+    transform:translateY(-6px);
 }
 
 .card h3{
-    font-family:'Zen Dots',sans-serif;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
 .card p{
@@ -198,30 +170,24 @@ body{
     color:#555;
 }
 
-.card:hover i,
-.card:hover h3,
-.card:hover p{
-    color:white;
-}
-
 
 /* ================= FOOTER ================= */
 
 footer{
-    background:#050720;
-    color:#fff;
+    background:#0a0a0a;
+    color:#ffffff;
     text-align:center;
-    padding:30px 15px;
+    padding:25px 15px;
 }
 
-.socials{
+.social-icons{
+    margin-top:15px;
     display:flex;
     justify-content:center;
     gap:20px;
-    margin:20px 0;
 }
 
-.socials a{
+.social-icons a{
     width:45px;
     height:45px;
     border-radius:50%;
@@ -229,18 +195,21 @@ footer{
     align-items:center;
     justify-content:center;
     color:white;
-    font-size:20px;
     text-decoration:none;
-    transition:0.3s;
+    font-size:18px;
 }
 
-.socials a:hover{
-    transform:scale(1.2);
+.instagram{
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
 }
 
-.instagram{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);}
-.facebook{background:#1877f2;}
-.whatsapp{background:#25D366;}
+.facebook{
+    background:#1877f2;
+}
+
+.whatsapp{
+    background:#25D366;
+}
 
 
 /* ================= MOBILE ================= */
@@ -253,6 +222,10 @@ footer{
 
     .hero h1{
         font-size:1.7rem;
+    }
+
+    .logo-area img{
+        height:45px;
     }
 
 }
@@ -304,7 +277,7 @@ Chat on WhatsApp
 
 <!-- ================= SERVICES ================= -->
 
-<section class="services" id="services">
+<section class="features" id="services">
 <div class="container">
 
 <h2>Our Services</h2>
@@ -312,39 +285,33 @@ Chat on WhatsApp
 <div class="services-grid">
 
 <div class="card">
-<i class="fa-solid fa-hard-drive"></i>
 <h3>HDD & SSD Recovery</h3>
 <p>Advanced recovery for deleted, corrupted and damaged drives.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-mobile-screen"></i>
-<h3>Mobile Recovery</h3>
-<p>Secure extraction of photos, contacts, videos and app data.</p>
+<h3>Mobile Data Recovery</h3>
+<p>Secure extraction of photos, videos, contacts and documents.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-server"></i>
-<h3>RAID / NAS</h3>
-<p>Enterprise-level RAID and NAS data restoration solutions.</p>
+<h3>RAID / NAS Recovery</h3>
+<p>Professional RAID and NAS storage restoration.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-memory"></i>
-<h3>USB / Memory</h3>
-<p>Recovery from pen drives, SD cards and portable storage.</p>
+<h3>USB / Memory Cards</h3>
+<p>Pen drive and SD card data recovery services.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-video"></i>
 <h3>CCTV Recovery</h3>
-<p>Restore deleted or corrupted surveillance footage.</p>
+<p>Restore damaged or deleted surveillance footage.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-shield-halved"></i>
 <h3>Cyber Forensics</h3>
-<p>Legal-grade investigations and digital evidence collection.</p>
+<p>Legal-grade digital investigation and evidence handling.</p>
 </div>
 
 </div>
@@ -359,11 +326,11 @@ Chat on WhatsApp
 
 <p>© 2026 Alias Data | Bangalore, India</p>
 
-<div class="socials">
+<div class="social-icons">
 
-<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-<a href="https://wa.me/918431111867" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+<a href="#" class="instagram">IG</a>
+<a href="#" class="facebook">FB</a>
+<a href="https://wa.me/918431111867" class="whatsapp">WA</a>
 
 </div>
 
