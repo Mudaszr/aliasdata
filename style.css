@@ -258,7 +258,21 @@ footer {
     height: 48px;
     max-width: 200px;
     }
+/* ===== Header Layout Fix ===== */
+
+    .header-flex {
+    display: flex;
+    align-items: right;
+    width: 100%;
+    }
+
+    .main-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: right;
+    }
 
 }
+
 
 
