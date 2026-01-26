@@ -25,7 +25,6 @@ body{
     background:#fff;
     color:#111;
     font-family:'Poppins',sans-serif;
-    line-height:1.6;
 }
 
 .container{
@@ -50,7 +49,7 @@ body{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    min-height:80px;
+    height:80px;
 }
 
 /* Logo */
@@ -68,7 +67,7 @@ body{
     font-family:'Zen Dots',sans-serif;
     text-decoration:none;
     color:#111;
-    font-size:15px;
+    font-size:14px;
     position:relative;
 }
 
@@ -76,7 +75,7 @@ body{
     content:"";
     position:absolute;
     left:0;
-    bottom:-5px;
+    bottom:-6px;
     width:0%;
     height:2px;
     background:#1877f2;
@@ -103,14 +102,13 @@ body{
 
 .hero h1{
     font-family:'Zen Dots',sans-serif;
-    font-size:2.6rem;
+    font-size:2.4rem;
     margin-bottom:20px;
 }
 
 .hero p{
     max-width:850px;
     margin:auto;
-    font-size:1rem;
     opacity:0.9;
 }
 
@@ -162,7 +160,6 @@ body{
     overflow:hidden;
 }
 
-/* Hover gradient */
 .card::before{
     content:"";
     position:absolute;
@@ -170,7 +167,6 @@ body{
     background:linear-gradient(135deg,#050720,#0b0f3a);
     opacity:0;
     transition:0.4s;
-    z-index:0;
 }
 
 .card:hover::before{
@@ -186,32 +182,26 @@ body{
     transform:translateY(-10px);
 }
 
-/* Icon */
 .card i{
-    font-size:32px;
+    font-size:30px;
     color:#25d366;
     margin-bottom:15px;
 }
 
-.card:hover i{
-    color:#fff;
-}
-
-/* Title */
 .card h3{
     font-family:'Zen Dots',sans-serif;
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
-/* Description */
 .card p{
     font-size:14px;
     color:#555;
 }
 
+.card:hover i,
 .card:hover h3,
 .card:hover p{
-    color:#fff;
+    color:white;
 }
 
 
@@ -221,7 +211,7 @@ footer{
     background:#050720;
     color:#fff;
     text-align:center;
-    padding:35px 15px;
+    padding:30px 15px;
 }
 
 .socials{
@@ -275,105 +265,87 @@ footer{
 <!-- ================= HEADER ================= -->
 
 <header class="site-header">
-    <div class="container header-bar">
+<div class="container header-bar">
 
-        <div class="logo-area">
-            <img src="logo.png" alt="Alias Data">
-        </div>
-
-        <nav class="nav-menu">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-
+    <div class="logo-area">
+        <img src="logo.png" alt="Alias Data">
     </div>
+
+    <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</div>
 </header>
 
 
 <!-- ================= HERO ================= -->
 
 <section class="hero">
-    <div class="container">
+<div class="container">
 
-        <h1>Data Recovery & Cyber Forensics in Bangalore</h1>
+<h1>Data Recovery & Cyber Forensics in Bangalore</h1>
 
-        <p>
-            Alias Data specializes in secure data recovery, cyber forensic investigations,
-            and cyber hygiene audits for individuals, businesses, and legal cases.
-        </p>
+<p>
+Alias Data specializes in secure data recovery, cyber forensic investigations,
+and cyber hygiene audits for individuals and businesses.
+</p>
 
-        <a href="https://wa.me/918431111867" class="btn">
-            Chat on WhatsApp
-        </a>
+<a href="https://wa.me/918431111867" class="btn">
+Chat on WhatsApp
+</a>
 
-    </div>
+</div>
 </section>
 
 
 <!-- ================= SERVICES ================= -->
 
-<section class="services">
+<section class="services" id="services">
 <div class="container">
 
 <h2>Our Services</h2>
 
 <div class="services-grid">
 
-    <div class="card">
-        <i class="fa-solid fa-hard-drive"></i>
-        <h3>HDD & SSD Recovery</h3>
-        <p>
-            Advanced recovery for deleted, corrupted,
-            formatted, and physically damaged storage drives.
-        </p>
-    </div>
+<div class="card">
+<i class="fa-solid fa-hard-drive"></i>
+<h3>HDD & SSD Recovery</h3>
+<p>Advanced recovery for deleted, corrupted and damaged drives.</p>
+</div>
 
-    <div class="card">
-        <i class="fa-solid fa-mobile-screen"></i>
-        <h3>Mobile Recovery</h3>
-        <p>
-            Secure extraction of photos, videos, messages,
-            contacts, and app data from smartphones.
-        </p>
-    </div>
+<div class="card">
+<i class="fa-solid fa-mobile-screen"></i>
+<h3>Mobile Recovery</h3>
+<p>Secure extraction of photos, contacts, videos and app data.</p>
+</div>
 
-    <div class="card">
-        <i class="fa-solid fa-server"></i>
-        <h3>RAID / NAS</h3>
-        <p>
-            Professional RAID and NAS recovery solutions
-            for enterprise and personal servers.
-        </p>
-    </div>
+<div class="card">
+<i class="fa-solid fa-server"></i>
+<h3>RAID / NAS</h3>
+<p>Enterprise-level RAID and NAS data restoration solutions.</p>
+</div>
 
-    <div class="card">
-        <i class="fa-solid fa-memory"></i>
-        <h3>Memory Cards</h3>
-        <p>
-            Recovery of data from SD cards, pen drives,
-            USB devices, and portable storage.
-        </p>
-    </div>
+<div class="card">
+<i class="fa-solid fa-memory"></i>
+<h3>USB / Memory</h3>
+<p>Recovery from pen drives, SD cards and portable storage.</p>
+</div>
 
-    <div class="card">
-        <i class="fa-solid fa-video"></i>
-        <h3>CCTV Footage</h3>
-        <p>
-            Restoration of deleted or corrupted CCTV
-            surveillance footage and recordings.
-        </p>
-    </div>
+<div class="card">
+<i class="fa-solid fa-video"></i>
+<h3>CCTV Recovery</h3>
+<p>Restore deleted or corrupted surveillance footage.</p>
+</div>
 
-    <div class="card">
-        <i class="fa-solid fa-shield-halved"></i>
-        <h3>Cyber Forensics</h3>
-        <p>
-            Legal-grade cyber investigation for fraud,
-            breaches, and digital evidence collection.
-        </p>
-    </div>
+<div class="card">
+<i class="fa-solid fa-shield-halved"></i>
+<h3>Cyber Forensics</h3>
+<p>Legal-grade investigations and digital evidence collection.</p>
+</div>
 
 </div>
 
