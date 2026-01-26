@@ -6,75 +6,61 @@
 
 <title>Alias Data | Data Recovery Bangalore</title>
 
-<!-- Zen Dots Font -->
+<!-- Zen Dots -->
 <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
-/* ================= RESET ================= */
+/* RESET */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Zen Dots',Arial,sans-serif;
+    font-family:'Zen Dots',sans-serif;
 }
 
-/* ================= BODY ================= */
 body{
     background:#fff;
-    color:#1a1a1a;
+    color:#111;
     line-height:1.6;
 }
 
-/* ================= NORMAL CONTAINER ================= */
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:0 20px;
-}
-
-/* ================= HEADER ================= */
+/* HEADER */
 
 .site-header{
     background:#fff;
     border-bottom:4px solid;
-    border-image:linear-gradient(90deg,#050720,#1877f2,#25D366) 1;
+    border-image:linear-gradient(90deg,#050720,#1877f2,#25d366) 1;
     position:sticky;
     top:0;
     z-index:1000;
 }
 
-/* FULL WIDTH HEADER BAR */
 .header-bar{
     width:100%;
     display:flex;
     align-items:center;
-    justify-content:space-between; /* KEY */
-    padding:0 30px;
-    min-height:80px;
+    justify-content:space-between;
+    padding:15px 30px;
 }
 
-/* Logo */
+/* LOGO */
+
 .logo-area{
-    display:flex;
-    align-items:center;
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:2px;
 }
 
-.site-logo{
-    height:60px;
-    max-width:260px;
-    object-fit:contain;
-    transition:0.3s;
-}
+/* NAV */
 
-.site-logo:hover{
-    filter:drop-shadow(0 0 6px #1877f2);
-}
-
-/* Menu */
 .nav-menu{
     display:flex;
-    gap:35px;
+    gap:30px;
 }
 
 .nav-menu a{
@@ -82,68 +68,64 @@ body{
     color:#222;
     font-weight:600;
     position:relative;
-    padding-bottom:4px;
-    transition:0.3s;
 }
 
 .nav-menu a::after{
     content:"";
     position:absolute;
+    bottom:-4px;
     left:0;
-    bottom:0;
-    width:0%;
+    width:0;
     height:2px;
     background:#1877f2;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .nav-menu a:hover::after{
     width:100%;
 }
 
-.nav-menu a:hover{
-    color:#1877f2;
-}
-
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
     background:linear-gradient(135deg,#050720,#0b0f3a);
-    color:#fff;
-    padding:90px 0;
+    color:white;
     text-align:center;
+    padding:90px 20px;
 }
 
 .hero h1{
-    font-size:2.4rem;
+    font-size:2.5rem;
     margin-bottom:20px;
 }
 
 .hero p{
-    max-width:900px;
+    max-width:850px;
     margin:auto;
     margin-bottom:30px;
 }
 
+/* BUTTON */
+
 .btn{
     background:#25d366;
-    color:#fff;
-    padding:14px 32px;
-    border-radius:6px;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
     text-decoration:none;
     font-weight:bold;
     display:inline-block;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .btn:hover{
     transform:scale(1.05);
 }
 
-/* ================= SERVICES ================= */
+/* SERVICES */
 
 .features{
-    padding:70px 0;
+    padding:70px 20px;
 }
 
 .features h2{
@@ -152,6 +134,8 @@ body{
 }
 
 .services-grid{
+    max-width:1200px;
+    margin:auto;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:30px;
@@ -160,9 +144,9 @@ body{
 .card{
     background:#fff;
     padding:30px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.3s;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
 .card:hover{
@@ -170,37 +154,41 @@ body{
 }
 
 .card h3{
-    margin-bottom:15px;
+    margin-bottom:12px;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
     background:#0a0a0a;
-    color:#fff;
+    color:white;
     text-align:center;
-    padding:25px 15px;
+    padding:30px 15px;
 }
 
+/* SOCIAL ICONS */
+
 .social-icons{
-    margin-top:15px;
     display:flex;
     justify-content:center;
-    gap:25px;
+    gap:22px;
+    margin:20px 0;
 }
 
 .social-btn{
-    width:45px;
-    height:45px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    width:48px;
+    height:48px;
     border-radius:50%;
-    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
     font-size:22px;
     text-decoration:none;
-    transition:0.3s;
+    transition:.3s;
 }
+
+/* COLORS */
 
 .instagram{
     background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
@@ -211,28 +199,30 @@ footer{
 }
 
 .whatsapp{
-    background:#25D366;
+    background:#25d366;
 }
 
 .social-btn:hover{
     transform:scale(1.2);
+    box-shadow:0 0 12px rgba(255,255,255,.4);
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media(max-width:768px){
 
-    .nav-menu{
-        display:none;
-    }
+.nav-menu{
+    display:none;
+}
 
-    .site-logo{
-        height:45px;
-    }
+.hero h1{
+    font-size:1.7rem;
+}
 
-    .hero h1{
-        font-size:1.6rem;
-    }
+.logo-area{
+    font-size:24px;
+}
+
 }
 
 </style>
@@ -240,30 +230,29 @@ footer{
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header class="site-header">
 <div class="header-bar">
 
-    <div class="logo-area">
-        <!-- Change logo.png if needed -->
-        <img src="logo.png" class="site-logo" alt="Alias Data">
-    </div>
+<div class="logo-area">
+ALIAS DATA
+</div>
 
-    <nav class="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<nav class="nav-menu">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
 
 </div>
 </header>
 
-<!-- ================= HERO ================= -->
+
+<!-- HERO -->
 
 <section class="hero">
-<div class="container">
 
 <h1>
 Data Recovery, Cyber Forensics & Cyber Hygiene Audits in Bangalore
@@ -271,20 +260,20 @@ Data Recovery, Cyber Forensics & Cyber Hygiene Audits in Bangalore
 
 <p>
 Alias Data specializes in secure data recovery, cyber forensic investigations,
-and cyber hygiene audits for individuals, businesses, and legal cases.
+and cyber hygiene audits for individuals, businesses, and legal cases across
+Bangalore (Bengaluru).
 </p>
 
 <a href="https://wa.me/918431111867" class="btn">
 Chat on WhatsApp
 </a>
 
-</div>
 </section>
 
-<!-- ================= SERVICES ================= -->
+
+<!-- SERVICES -->
 
 <section class="features">
-<div class="container">
 
 <h2>Our Services in Bangalore</h2>
 
@@ -292,30 +281,30 @@ Chat on WhatsApp
 
 <div class="card">
 <h3>HDD & SSD Recovery</h3>
-<p>Advanced recovery for damaged, deleted, or corrupted drives.</p>
+<p>Advanced recovery for deleted, corrupted and damaged drives.</p>
 </div>
 
 <div class="card">
 <h3>Mobile Recovery</h3>
-<p>Recover photos, videos, contacts and app data securely.</p>
+<p>Photos, videos, contacts and app data recovery.</p>
 </div>
 
 <div class="card">
 <h3>Cyber Forensics</h3>
-<p>Professional investigations for fraud and legal cases.</p>
+<p>Professional investigation for legal and corporate cases.</p>
 </div>
 
 <div class="card">
-<h3>Cyber Hygiene</h3>
-<p>Security audits to detect vulnerabilities and risks.</p>
+<h3>Security Audits</h3>
+<p>Cyber hygiene audits and vulnerability assessments.</p>
 </div>
 
 </div>
 
-</div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -323,9 +312,17 @@ Chat on WhatsApp
 
 <div class="social-icons">
 
-<a href="#" class="social-btn instagram">📷</a>
-<a href="#" class="social-btn facebook">f</a>
-<a href="https://wa.me/918431111867" class="social-btn whatsapp">💬</a>
+<a href="https://instagram.com/aliasdata" class="social-btn instagram">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://facebook.com" class="social-btn facebook">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://wa.me/918431111867" class="social-btn whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </div>
 
