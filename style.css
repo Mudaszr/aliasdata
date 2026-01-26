@@ -276,7 +276,7 @@ footer {
 
     .header-bar {
     display: flex;
-    align-items: center;
+    align-items: right;
     width: 100%;
     }
 
@@ -284,11 +284,12 @@ footer {
     margin-left: auto;
     display: flex;
     gap: 35px;
-    align-items: center;
+    align-items: right;
     }
 
 
 }
+
 
 
 
