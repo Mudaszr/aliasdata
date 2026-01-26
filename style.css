@@ -166,6 +166,11 @@ footer {
     background: #1877f2;
 }
 
+/* WhatsApp */
+.social-icons .whatsapp {
+    background: #25D366;
+}
+
 /* Hover Effect */
 .social-icons .social-btn:hover {
     transform: scale(1.2);
@@ -184,4 +189,5 @@ footer {
     }
 
 }
+
 
