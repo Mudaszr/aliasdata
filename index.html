@@ -6,7 +6,7 @@
 
 <title>Alias Data | Data Recovery Bangalore</title>
 
-<!-- Zen Dots -->
+<!-- Zen Dots Font -->
 <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
 <!-- Font Awesome -->
@@ -15,214 +15,244 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <style>
 
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Zen Dots',sans-serif;
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive !important;
 }
 
-body{
-    background:#fff;
-    color:#111;
-    line-height:1.6;
+body {
+    background: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
-.site-header{
-    background:#fff;
-    border-bottom:4px solid;
-    border-image:linear-gradient(90deg,#050720,#1877f2,#25d366) 1;
-    position:sticky;
-    top:0;
-    z-index:1000;
+.site-header {
+    background: #ffffff;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(90deg,#050720,#1877f2,#25D366) 1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.header-bar{
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:15px 30px;
+/* Full width header */
+.header-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
 }
 
-/* LOGO */
+/* Logo */
 
-.logo-area{
-    font-size:32px;
-    font-weight:700;
-    letter-spacing:2px;
+.logo-area {
+    display: flex;
+    align-items: center;
 }
 
-/* NAV */
-
-.nav-menu{
-    display:flex;
-    gap:30px;
+.site-logo {
+    height: 60px;
+    max-width: 260px;
+    width: auto;
+    object-fit: contain;
+    transition: 0.3s;
 }
 
-.nav-menu a{
-    text-decoration:none;
-    color:#222;
-    font-weight:600;
-    position:relative;
+.site-logo:hover {
+    filter: drop-shadow(0 0 8px #1877f2);
 }
 
-.nav-menu a::after{
-    content:"";
-    position:absolute;
-    bottom:-4px;
-    left:0;
-    width:0;
-    height:2px;
-    background:#1877f2;
-    transition:.3s;
+/* Navigation */
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
 }
 
-.nav-menu a:hover::after{
-    width:100%;
+.nav-menu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 4px;
+    transition: 0.3s;
 }
 
-/* HERO */
-
-.hero{
-    background:linear-gradient(135deg,#050720,#0b0f3a);
-    color:white;
-    text-align:center;
-    padding:90px 20px;
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #1877f2;
+    transition: 0.3s;
 }
 
-.hero h1{
-    font-size:2.5rem;
-    margin-bottom:20px;
+.nav-menu a:hover::after {
+    width: 100%;
 }
 
-.hero p{
-    max-width:850px;
-    margin:auto;
-    margin-bottom:30px;
+.nav-menu a:hover {
+    color: #1877f2;
 }
 
-/* BUTTON */
+/* ================= HERO ================= */
 
-.btn{
-    background:#25d366;
-    color:white;
-    padding:14px 30px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    display:inline-block;
-    transition:.3s;
+.hero {
+    background: linear-gradient(135deg,#050720,#0b0f3a);
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
 }
 
-.btn:hover{
-    transform:scale(1.05);
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-/* SERVICES */
-
-.features{
-    padding:70px 20px;
+.hero p {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
-.features h2{
-    text-align:center;
-    margin-bottom:40px;
+/* Button */
+
+.btn {
+    background: #25d366;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
 }
 
-.services-grid{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
+.btn:hover {
+    transform: scale(1.05);
 }
 
-.card{
-    background:#fff;
-    padding:30px;
-    border-radius:14px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
+/* ================= SERVICES ================= */
+
+.features {
+    padding: 70px 20px;
 }
 
-.card:hover{
-    transform:translateY(-6px);
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.card h3{
-    margin-bottom:12px;
+.services-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 30px;
 }
 
-/* FOOTER */
-
-footer{
-    background:#0a0a0a;
-    color:white;
-    text-align:center;
-    padding:30px 15px;
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: 0.35s;
+    cursor: pointer;
 }
 
-/* SOCIAL ICONS */
-
-.social-icons{
-    display:flex;
-    justify-content:center;
-    gap:22px;
-    margin:20px 0;
+.card h3 {
+    margin-bottom: 12px;
 }
 
-.social-btn{
-    width:48px;
-    height:48px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    font-size:22px;
-    text-decoration:none;
-    transition:.3s;
+/* Dark Blue Hover (Your Theme) */
+
+.card:hover {
+    background: linear-gradient(135deg,#050720,#0b0f3a);
+    color: #ffffff;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(5,7,32,0.6);
 }
 
-/* COLORS */
-
-.instagram{
-    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+.card:hover h3,
+.card:hover p {
+    color: #ffffff;
 }
 
-.facebook{
-    background:#1877f2;
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
 }
 
-.whatsapp{
-    background:#25d366;
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin: 20px 0;
 }
 
-.social-btn:hover{
-    transform:scale(1.2);
-    box-shadow:0 0 12px rgba(255,255,255,.4);
+.social-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-/* MOBILE */
+/* Colors */
+
+.instagram {
+    background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+.social-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 12px rgba(255,255,255,.4);
+}
+
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
-.nav-menu{
-    display:none;
-}
+    .nav-menu {
+        display: none;
+    }
 
-.hero h1{
-    font-size:1.7rem;
-}
+    .hero h1 {
+        font-size: 1.7rem;
+    }
 
-.logo-area{
-    font-size:24px;
-}
-
+    .site-logo {
+        height: 48px;
+        max-width: 200px;
+    }
 }
 
 </style>
@@ -230,27 +260,29 @@ footer{
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header class="site-header">
 <div class="header-bar">
 
-<div class="logo-area">
-ALIAS DATA
-</div>
+    <!-- Logo -->
+    <div class="logo-area">
+        <img src="logo.png" alt="Alias Data" class="site-logo">
+    </div>
 
-<nav class="nav-menu">
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+    <!-- Menu -->
+    <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
 </div>
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
@@ -271,7 +303,7 @@ Chat on WhatsApp
 </section>
 
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 
 <section class="features">
 
@@ -304,7 +336,7 @@ Chat on WhatsApp
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
