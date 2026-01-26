@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Body */
 body {
     color: #1a1a1a;
     background: #ffffff;
     line-height: 1.6;
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -118,48 +121,38 @@ footer {
     padding: 25px 15px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-    nav {
-        display: none;
-    }
-
-    .hero h2 {
-        font-size: 1.7rem;
-    }
-
-/* Social Media Icons */
-
-/* Social Media Icons - Premium Look */
+/* ===== Social Media Icons ===== */
 
 .social-icons {
     margin-top: 15px;
-    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    color: white;
+    font-size: 16px;
 }
 
-.social-icons a {
-    width: 45px;
-    height: 45px;
-    background: #222;
-    color: #fff;
-    border-radius: 50%;
+.social-icons .social-btn {
+    width: 48px;
+    height: 48px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    text-decoration: none;
+    border-radius: 50%;
+    color: #fff;
     font-size: 22px;
+
+    text-decoration: none;
 
     transition: all 0.3s ease;
 }
 
-/* Instagram Gradient */
-.social-icons a.instagram {
-    background: radial-gradient(circle at 30% 30%,
+/* Instagram */
+.social-icons .instagram {
+    background: linear-gradient(45deg,
         #feda75,
         #fa7e1e,
         #d62976,
@@ -168,17 +161,26 @@ footer {
     );
 }
 
-/* Facebook Blue */
-.social-icons a.facebook {
+/* Facebook */
+.social-icons .facebook {
     background: #1877f2;
 }
 
 /* Hover Effect */
-.social-icons a:hover {
+.social-icons .social-btn:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    box-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 1.7rem;
+    }
+
 }
-
-
