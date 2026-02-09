@@ -240,16 +240,40 @@ footer {
     transform: scale(1.2);
     box-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
-.social-btn.reddit {
-    background: transparent !important; /* remove red bg */
+/* Base style: transparent + white icons */
+.social-btn {
+    background: transparent !important;
+    border: none;
+    font-size: 22px;
+    margin: 0 8px;
+    transition: all 0.3s ease;
 }
 
-.social-btn.reddit i {
-    color: #ff4500; /* Reddit orange icon */
+.social-btn i {
+    color: #ffffff; /* White by default */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effects */
+.social-btn:hover i {
+    transform: scale(1.2);
+}
+
+/* Platform Colors on Hover */
+.social-btn.instagram:hover i {
+    color: #e1306c;
+}
+
+.social-btn.facebook:hover i {
+    color: #1877f2;
+}
+
+.social-btn.whatsapp:hover i {
+    color: #25d366;
 }
 
 .social-btn.reddit:hover i {
-    color: #ff6a2b; /* hover orange */
+    color: #ff4500;
 }
 
 
@@ -264,5 +288,6 @@ footer {
 
     .hero h2 {
         font-size: 1.7rem;
+
 
 
