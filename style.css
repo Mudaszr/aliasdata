@@ -245,7 +245,7 @@ footer {
     background: transparent !important;
     border: none;
     font-size: 22px;
-    margin: 0 8px;
+    margin: 0 4px;
     transition: all 0.3s ease;
 }
 
@@ -288,6 +288,7 @@ footer {
 
     .hero h2 {
         font-size: 1.7rem;
+
 
 
 
