@@ -52,6 +52,8 @@
             margin-bottom: 25px;
         }
 
+        /* Contact Info */
+
         .contact-info {
             text-align: left;
             margin-bottom: 30px;
@@ -69,6 +71,8 @@
             font-size: 18px;
             color: #25d366;
         }
+
+        /* Buttons */
 
         .contact-buttons {
             display: flex;
@@ -99,12 +103,12 @@
             transform: scale(1.05);
         }
 
-        /* Social Icons */
+        /* Social Icons - Monochrome to Color on Hover */
 
         .contact-social {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 18px;
             margin-bottom: 25px;
         }
 
@@ -115,32 +119,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #fff;
-            font-size: 20px;
+
+            background: transparent;
             text-decoration: none;
-            transition: 0.3s;
+
+            transition: all 0.3s ease;
         }
 
-        .contact-social a:hover {
-            transform: scale(1.15);
+        .contact-social a i {
+            color: #ffffff;
+            font-size: 22px;
+
+            transition: all 0.3s ease;
         }
 
-        .instagram {
-            background: linear-gradient(45deg,
-                #feda75,
-                #fa7e1e,
-                #d62976,
-                #962fbf,
-                #4f5bd5
-            );
+        .contact-social a:hover i {
+            transform: scale(1.2);
         }
 
-        .facebook {
-            background: #1877f2;
+        /* Hover Colors */
+
+        .contact-social .instagram:hover i {
+            color: #e1306c;
         }
 
-        .whatsapp {
-            background: #25D366;
+        .contact-social .facebook:hover i {
+            color: #1877f2;
+        }
+
+        .contact-social .whatsapp:hover i {
+            color: #25d366;
+        }
+
+        .contact-social .reddit:hover i {
+            color: #ff4500;
         }
 
         /* Back Button */
@@ -150,6 +162,7 @@
             color: #aaa;
             text-decoration: none;
             font-size: 14px;
+            margin-bottom: 15px;
         }
 
         .back-btn i {
@@ -214,7 +227,7 @@
 
                 <i class="fas fa-calendar-check"></i> Book Appointment
             </a>
-     
+
         </div>
 
         <!-- Social Icons -->
@@ -239,6 +252,13 @@
                class="whatsapp">
 
                 <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.reddit.com/r/aliasdata/"
+               target="_blank"
+               class="reddit">
+
+                <i class="fab fa-reddit-alien"></i>
             </a>
 
         </div>
