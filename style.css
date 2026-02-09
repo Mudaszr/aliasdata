@@ -240,6 +240,14 @@ footer {
     transform: scale(1.2);
     box-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
+.social-btn.reddit {
+    color: #ff4500; /* Reddit Orange */
+}
+
+.social-btn.reddit:hover {
+    color: #ff6a2b; /* Lighter orange on hover (optional) */
+}
+
 
 /* ================= MOBILE ================= */
 
@@ -251,3 +259,4 @@ footer {
 
     .hero h2 {
         font-size: 1.7rem;
+
