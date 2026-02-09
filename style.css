@@ -141,22 +141,28 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-}
+/* Service Cards Hover Effect */
 
-.card {
+.services-grid .card {
     background: #ffffff;
-    padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    padding: 25px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.card:hover {
-    transform: translateY(-5px);
+/* On Hover → Footer Gradient */
+.services-grid .card:hover {
+    background: linear-gradient(135deg, #050720, #0a0f3d);
+    color: #ffffff;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Make text turn white on hover */
+.services-grid .card:hover h3,
+.services-grid .card:hover p {
+    color: #ffffff;
 }
 
 .card h3 {
@@ -288,6 +294,7 @@ footer {
 
     .hero h2 {
         font-size: 1.7rem;
+
 
 
 
