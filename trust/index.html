@@ -2,61 +2,235 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>AliasTrust</title>
+<title>AliasTrust — Verification</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
+
+/* Base */
+
 body{
+  margin:0;
   background:#0b0d10;
   color:#eee;
-  font-family:Arial, sans-serif;
+  font-family:Inter, sans-serif;
 }
 
-.wrap{
-  max-width:700px;
+.container{
+  max-width:720px;
   margin:80px auto;
   padding:20px;
 }
-input,button{
-  width:100%;
-  padding:12px;
-  margin:10px 0;
+
+/* Headings */
+
+h1{
+  font-weight:500;
+  margin-bottom:10px;
 }
+
+h3{
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+/* Steps */
+
+.step{
+  display:none;
+}
+
+.step.active{
+  display:block;
+}
+
+/* Inputs */
+
+input{
+  width:100%;
+  padding:14px;
+  margin:12px 0;
+  background:#111;
+  border:1px solid #333;
+  color:#fff;
+  border-radius:4px;
+}
+
+/* Buttons */
+
 button{
+  width:100%;
+  padding:14px;
+  margin-top:15px;
   background:#fff;
   border:none;
+  font-weight:500;
   cursor:pointer;
+  border-radius:4px;
 }
+
+button:hover{
+  background:#ddd;
+}
+
+/* Footer note */
+
+.note{
+  margin-top:25px;
+  font-size:13px;
+  color:#888;
+  line-height:1.5;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="wrap">
+<div class="container">
 
-<h1>AliasTrust — Early Access</h1>
-<p>Apply for verified membership.</p>
+<h1>AliasTrust — Verification Application</h1>
 
-<form action="mailto:aliasdatarecovery@gmail.com?subject=AliasTrust Application"
-      method="post"
-      enctype="text/plain">
+<p>Multi-step onboarding for verified professionals and businesses.</p>
 
-<input name="Name" placeholder="Full Name" required>
-<input name="Email" type="email" placeholder="Email" required>
-<input name="Phone" placeholder="Phone" required>
-<input name="Company" placeholder="Company">
+<form id="verifyForm"
+action="mailto:aliasdatarecovery@gmail.com?subject=[AliasTrust] New Application"
+method="post"
+enctype="text/plain">
 
-<button type="submit">Apply</button>
+
+<!-- STEP 1 -->
+
+<div class="step active">
+
+<h3>Step 1 — Personal Information</h3>
+
+<input name="Full Name" placeholder="Full Name" required>
+
+<input name="Email" type="email" placeholder="Email Address" required>
+
+<input name="Phone" placeholder="Phone Number" required>
+
+<button type="button" onclick="nextStep()">Continue</button>
+
+</div>
+
+
+<!-- STEP 2 -->
+
+<div class="step">
+
+<h3>Step 2 — Professional Details</h3>
+
+<input name="Company" placeholder="Company / Business Name">
+
+<input name="Role" placeholder="Role / Designation">
+
+<input name="Website" placeholder="Website / LinkedIn Profile">
+
+<button type="button" onclick="prevStep()">Back</button>
+
+<button type="button" onclick="nextStep()">Continue</button>
+
+</div>
+
+
+<!-- STEP 3 -->
+
+<div class="step">
+
+<h3>Step 3 — Declaration & Consent</h3>
+
+<p>
+I confirm that the information provided is accurate and complete.
+I agree to undergo AliasTrust verification as per platform policies.
+</p>
+
+<label style="font-size:14px;color:#ccc">
+
+<input type="checkbox" required>
+ I consent to identity verification and privacy terms.
+
+</label>
+
+<br><br>
+
+<button type="button" onclick="prevStep()">Back</button>
+
+<button type="submit">Submit Application</button>
+
+</div>
 
 </form>
 
-<p style="color:#aaa;font-size:14px">
-We review all applications manually.
-</p>
+
+<div class="note">
+
+All applications are reviewed manually by the AliasTrust compliance team.
+Personal data is encrypted and never disclosed publicly.
 
 </div>
+
+</div>
+
+
+<script>
+
+/* Step Control */
+
+let currentStep = 0;
+
+const steps = document.querySelectorAll(".step");
+
+
+function showStep(n){
+
+  steps.forEach((step,i)=>{
+
+    step.classList.remove("active");
+
+    if(i === n){
+      step.classList.add("active");
+    }
+
+  });
+
+}
+
+
+function nextStep(){
+
+  if(currentStep < steps.length - 1){
+
+    currentStep++;
+
+    showStep(currentStep);
+
+  }
+
+}
+
+
+function prevStep(){
+
+  if(currentStep > 0){
+
+    currentStep--;
+
+    showStep(currentStep);
+
+  }
+
+}
+
+
+/* Init */
+
+showStep(currentStep);
+
+</script>
 
 </body>
 </html>
