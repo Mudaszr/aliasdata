@@ -130,6 +130,32 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+/* ================= TRUST ================= */
+
+.alias-trust-icon {
+  margin-left: 20px;
+}
+
+.trust-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00f0ff, #0066ff);
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.trust-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+}
+
+
 /* ================= SERVICES ================= */
 
 .features {
@@ -306,6 +332,7 @@ footer {
 
     .hero h2 {
         font-size: 1.7rem;
+
 
 
 
