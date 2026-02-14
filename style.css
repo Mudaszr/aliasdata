@@ -30,33 +30,32 @@ body {
     z-index: 1000;
 }
 
+/* FIXED HEADER CONTAINER */
 .site-header .container {
     display: flex;
+    justify-content: space-between;  /* Logo left, nav right */
     align-items: center;
     min-height: 70px;
-    padding: 12px 20px;
-}
 
-/* Push menu to right */
-nav {
-    margin-left: 35px;
+    max-width: 100%;   /* Remove centering */
+    margin: 0;         /* Remove auto margin */
+    padding: 12px 40px; /* Adjust edge spacing here */
 }
 
 /* Logo */
 
 .logo-area {
     display: flex;
-    align-items: left;
+    align-items: center;
 }
 
 .site-logo {
-    height: 60px;        /* Bigger */
-    max-width: 260px;   /* Wider */
+    height: 60px;
+    max-width: 260px;
     width: auto;
     object-fit: contain;
     transition: 0.3s ease;
 }
-
 
 .site-logo:hover {
     filter: drop-shadow(0 0 6px #1877f2);
@@ -141,8 +140,6 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-/* Service Cards Hover Effect */
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -154,15 +151,12 @@ nav a:hover {
     background: #ffffff;
     border-radius: 12px;
     padding: 25px;
-
     width: 100%;
     max-width: 100%;
-
     transition: all 0.4s ease;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-/* On Hover → Footer Gradient */
 .services-grid .card:hover {
     background: linear-gradient(135deg, #050720, #0a0f3d);
     color: #ffffff;
@@ -170,12 +164,10 @@ nav a:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }
 
-/* Make text turn white on hover */
 .services-grid .card:hover h3,
 .services-grid .card:hover p {
     color: #ffffff;
 }
-
 
 .card h3 {
     margin-bottom: 15px;
@@ -218,83 +210,20 @@ footer {
 .social-icons .social-btn {
     width: 48px;
     height: 48px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 50%;
     color: #fff;
     font-size: 22px;
-
     text-decoration: none;
-
     transition: all 0.3s ease;
 }
 
-/* Instagram */
-.social-icons .instagram {
-    background: linear-gradient(45deg,
-        #feda75,
-        #fa7e1e,
-        #d62976,
-        #962fbf,
-        #4f5bd5
-    );
-}
-
-/* Facebook */
-.social-icons .facebook {
-    background: #1877f2;
-}
-
-/* WhatsApp */
-.social-icons .whatsapp {
-    background: #25D366;
-}
-
-/* Hover */
 .social-icons .social-btn:hover {
     transform: scale(1.2);
     box-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
-/* Base style: transparent + white icons */
-.social-btn {
-    background: transparent !important;
-    border: none;
-    font-size: 22px;
-    margin: 0 4px;
-    transition: all 0.3s ease;
-}
-
-.social-btn i {
-    color: #ffffff; /* White by default */
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover Effects */
-.social-btn:hover i {
-    transform: scale(1.2);
-}
-
-/* Platform Colors on Hover */
-.social-btn.instagram:hover i {
-    color: #e1306c;
-}
-
-.social-btn.facebook:hover i {
-    color: #1877f2;
-}
-
-.social-btn.whatsapp:hover i {
-    color: #25d366;
-}
-
-.social-btn.reddit:hover i {
-    color: #ff4500;
-}
-
-
 
 /* ================= MOBILE ================= */
 
@@ -306,9 +235,5 @@ footer {
 
     .hero h2 {
         font-size: 1.7rem;
-
-
-
-
-
-
+    }
+}
