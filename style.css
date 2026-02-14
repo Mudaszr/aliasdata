@@ -46,7 +46,7 @@ nav {
 
 .logo-area {
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 
 .site-logo {
@@ -306,6 +306,7 @@ footer {
 
     .hero h2 {
         font-size: 1.7rem;
+
 
 
 
