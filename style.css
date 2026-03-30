@@ -171,6 +171,11 @@ nav a:hover {
 
 .card h3 {
     margin-bottom: 15px;
+    font-family: 'Zen Dots', Arial, Helvetica, sans-serif; /* keep title font */
+}
+
+.card p {
+    font-family: "Times New Roman", Times, serif; /* change body text */
 }
 
 /* ================= LOCATION ================= */
