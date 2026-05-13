@@ -4,44 +4,37 @@ const height = window.innerHeight;
 const svg = d3.select("#map")
   .append("svg")
   .attr("width", width)
-  .attr("height", height)
-  .style("background", "#050505");
+  .attr("height", height);
 
-const zoom = d3.zoom()
-  .scaleExtent([1, 8])
-  .on("zoom", (event) => {
-    svg.selectAll("g")
-      .attr("transform", event.transform);
-  });
+/* MAIN MAP GROUP */
+const g = svg.append("g");
 
-svg.call(zoom);
+/* PROJECTION */
 const projection = d3.geoMercator()
-  .scale(140)
-  .translate([width / 2, height / 1.5]);
+  .scale(width / 6.5)
+  .translate([width / 2, height / 1.7]);
 
 const path = d3.geoPath().projection(projection);
 
-d3.json("https://unpkg.com/world-atlas@2/countries-110m.json")
-  .then(function(world) {
+/* LOAD WORLD */
+d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+  .then(function(data) {
 
-    const countries = topojson.feature(
-      world,
-      world.objects.countries
-    );
-
-    svg.append("g")
-      .selectAll("path")
-      .data(countries.features)
+    /* COUNTRIES */
+    g.selectAll("path")
+      .data(data.features)
       .enter()
       .append("path")
       .attr("d", path)
-      .attr("fill", "#0a0a0a")
-      .attr("stroke", "#333")
-      .attr("stroke-width", 0.7);
+      .attr("fill", "#050505")
+      .attr("stroke", "#1a1a1a")
+      .attr("stroke-width", 0.8);
 
     drawThreats();
+
   });
 
+/* THREAT HOTSPOTS */
 function drawThreats() {
 
   threatData.forEach(threat => {
@@ -53,41 +46,58 @@ function drawThreats() {
 
     if (!coords) return;
 
-    // glow
-    svg.append("circle")
+    /* GLOW */
+    g.append("circle")
       .attr("cx", coords[0])
       .attr("cy", coords[1])
-      .attr("r", 10)
-      .attr("fill", "red")
-      .attr("opacity", 0.3);
+      .attr("r", 18)
+      .style("fill", "rgba(255,0,0,0.15)");
 
-    // core
-    svg.append("circle")
+    /* CORE */
+    g.append("circle")
       .attr("cx", coords[0])
       .attr("cy", coords[1])
-      .attr("r", 4)
-      .attr("fill", "#ff2b2b");
+      .attr("r", 5)
+      .style("fill", "#ff2b2b");
 
-    animatePulse(coords);
+    pulse(coords[0], coords[1]);
+
   });
+
 }
 
-function animatePulse(coords) {
+/* PULSE ANIMATION */
+function pulse(x, y) {
 
-  const pulse = svg.append("circle")
-    .attr("cx", coords[0])
-    .attr("cy", coords[1])
-    .attr("r", 5)
-    .attr("stroke", "red")
-    .attr("stroke-width", 2)
-    .attr("fill", "none");
+  const circle = g.append("circle")
+    .attr("cx", x)
+    .attr("cy", y)
+    .attr("r", 6)
+    .style("stroke", "#ff2b2b")
+    .style("stroke-width", 2)
+    .style("fill", "none");
 
-  pulse.transition()
-    .duration(2000)
-    .attr("r", 30)
+  circle.transition()
+    .duration(2200)
+    .attr("r", 40)
     .style("opacity", 0)
     .on("end", () => {
-      pulse.remove();
-      animatePulse(coords);
+
+      circle.remove();
+
+      pulse(x, y);
+
     });
+
 }
+
+/* ZOOM + DRAG */
+const zoom = d3.zoom()
+  .scaleExtent([1, 8])
+  .on("zoom", (event) => {
+
+    g.attr("transform", event.transform);
+
+  });
+
+svg.call(zoom);
