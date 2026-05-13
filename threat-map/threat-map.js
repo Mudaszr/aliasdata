@@ -92,12 +92,11 @@ function pulse(x, y) {
 }
 
 /* ZOOM + DRAG */
-const zoom = d3.zoom()
-  .scaleExtent([1, 8])
-  .on("zoom", (event) => {
+const isThreatPage =
+  window.location.pathname.includes("threat-map");
 
-    g.attr("transform", event.transform);
+if (isThreatPage) {
 
-  });
+  svg.call(zoom);
 
-svg.call(zoom);
+}
