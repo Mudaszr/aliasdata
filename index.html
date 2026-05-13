@@ -75,20 +75,63 @@
 </header>
 
 
-<section class="hero">
-    <div class="container">
-        <h2>Data Recovery, Cyber Forensics & Cyber Hygiene Audits in Bangalore</h2>
+<section class="hero-map">
 
-        <p>
-            Alias Data specializes in secure data recovery, cyber forensic investigations,
-            and cyber hygiene audits for individuals, businesses, and legal cases across
-            Bangalore (Bengaluru).
-        </p>
+    <!-- LIVE MAP -->
+    <div id="map"></div>
 
-        <a class="btn" href="https://wa.me/918431111867">Chat on WhatsApp</a>
+    <!-- OVERLAY -->
+    <div class="hero-overlay">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <h2>
+                    Data Recovery, Cyber Forensics &
+                    Cyber Hygiene Audits in Bangalore
+                </h2>
+
+                <p>
+                    Alias Data specializes in secure data recovery,
+                    cyber forensic investigations, and cyber hygiene
+                    audits for individuals, businesses, and legal
+                    cases across Bangalore (Bengaluru).
+                </p>
+
+                <a class="btn"
+                   href="https://wa.me/918431111867">
+
+                    Chat on WhatsApp
+
+                </a>
+
+            </div>
+
+            <!-- LIVE FEED -->
+            <div class="live-threat-panel">
+
+                <h3>LIVE THREATS</h3>
+
+                <div class="threat-item critical">
+                    CRITICAL — Ransomware surge detected in Germany
+                </div>
+
+                <div class="threat-item high">
+                    HIGH — Phishing campaign targeting India
+                </div>
+
+                <div class="threat-item medium">
+                    MEDIUM — Botnet traffic spike in Brazil
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-</section>
 
+</section>
 <section class="features">
     <div class="container">
 
@@ -217,6 +260,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
+
+<!-- D3 -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<!-- TOPOJSON -->
+<script src="https://unpkg.com/topojson-client@3"></script>
+
+<!-- THREAT DATA -->
+<script src="/threat-map/threat-data.js"></script>
+
+<!-- MAP -->
+<script src="/threat-map/threat-map.js"></script>    
 
 </body>
 </html>
