@@ -6,7 +6,8 @@
 
 body {
   background: #050505;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: Arial, sans-serif;
   color: white;
 }
@@ -15,68 +16,95 @@ body {
 #map {
   position: fixed;
   inset: 0;
+
   width: 100vw;
   height: 100vh;
+
   z-index: 1;
 }
 
 #map svg {
   width: 100%;
   height: 100%;
+
   display: block;
-  background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+
+  touch-action: pan-x pan-y;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #0a0a0a 0%,
+      #000000 100%
+    );
 }
 
 /* DARK OVERLAY */
 body::after {
   content: "";
+
   position: fixed;
   inset: 0;
+
   background:
     linear-gradient(
       rgba(0,0,0,0.15),
       rgba(0,0,0,0.35)
     );
+
   pointer-events: none;
+
   z-index: 2;
 }
 
 /* HEADER */
 .header {
   position: fixed;
+
   top: 40px;
   left: 40px;
+
   z-index: 10;
 }
 
 .header h1 {
   font-size: 52px;
   font-weight: 700;
+
   letter-spacing: 3px;
+
   color: white;
+
   margin-bottom: 10px;
 }
 
 .header p {
   color: #ff3b3b;
+
   font-size: 14px;
+
   letter-spacing: 2px;
+
   text-transform: uppercase;
 }
 
 /* THREAT FEED */
 .threat-feed {
   position: fixed;
+
   right: 40px;
   top: 40px;
+
   width: 360px;
 
   background: rgba(10,10,10,0.75);
+
   border: 1px solid rgba(255,255,255,0.08);
 
   backdrop-filter: blur(12px);
 
   padding: 25px;
+
   border-radius: 18px;
 
   z-index: 10;
@@ -87,12 +115,15 @@ body::after {
 
 .threat-feed h2 {
   margin-bottom: 20px;
+
   font-size: 22px;
+
   letter-spacing: 1px;
 }
 
 .feed-item {
   padding: 14px;
+
   margin-bottom: 14px;
 
   background: rgba(255,255,255,0.03);
@@ -100,6 +131,7 @@ body::after {
   border-radius: 12px;
 
   font-size: 14px;
+
   line-height: 1.5;
 
   border-left: 4px solid red;
@@ -109,6 +141,7 @@ body::after {
 
 .feed-item:hover {
   background: rgba(255,255,255,0.06);
+
   transform: translateX(3px);
 }
 
@@ -128,19 +161,31 @@ body::after {
 @media (max-width: 900px) {
 
   .header {
+    top: 25px;
     left: 20px;
-    top: 20px;
   }
 
   .header h1 {
     font-size: 34px;
   }
 
+  .header p {
+    font-size: 12px;
+
+    letter-spacing: 3px;
+  }
+
   .threat-feed {
-    width: calc(100% - 40px);
-    left: 20px;
-    right: 20px;
+
+    width: calc(100% - 30px);
+
+    left: 15px;
+    right: 15px;
+
     top: auto;
     bottom: 20px;
+
+    padding: 20px;
   }
+
 }
