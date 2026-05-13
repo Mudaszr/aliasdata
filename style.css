@@ -231,14 +231,192 @@ footer {
 }
 
 /* ================= MOBILE ================= */
+/* ================= NAVBAR ================= */
+
+.header-bar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: relative;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-weight: 600;
+
+    position: relative;
+
+    padding-bottom: 4px;
+
+    transition: 0.3s;
+}
+
+/* HOVER LINE */
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0%;
+
+    height: 2px;
+
+    background: #1877f2;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #1877f2;
+}
+
+/* HAMBURGER */
+
+.menu-toggle {
+
+    display: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #111;
+}
+
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
-    nav {
+    /* HEADER */
+
+    .site-header .container {
+
+        padding: 12px 20px;
+    }
+
+    .site-logo {
+
+        height: 52px;
+
+        max-width: 220px;
+    }
+
+    /* HAMBURGER */
+
+    .menu-toggle {
+
+        display: block;
+
+        z-index: 1001;
+    }
+
+    /* MOBILE NAV */
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 80px;
+        right: 20px;
+
+        background: #ffffff;
+
+        flex-direction: column;
+
+        width: 240px;
+
+        padding: 20px;
+
+        border-radius: 16px;
+
         display: none;
+
+        box-shadow:
+            0 10px 40px rgba(0,0,0,0.15);
+
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* HERO */
+
+    .hero {
+
+        padding: 70px 20px;
     }
 
     .hero h2 {
-        font-size: 1.7rem;
+
+        font-size: 1.8rem;
+
+        line-height: 1.4;
+    }
+
+    .hero p {
+
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    /* BUTTON */
+
+    .btn {
+
+        width: 100%;
+
+        max-width: 320px;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .social-icons {
+
+        flex-wrap: wrap;
+
+        gap: 16px;
     }
 }
