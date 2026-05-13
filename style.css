@@ -419,4 +419,180 @@ footer {
 
         gap: 16px;
     }
+
+    /* ================= LIVE MAP HERO ================= */
+
+.hero-map {
+
+    position: relative;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    background: #000;
+}
+
+/* MAP */
+
+#map {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+}
+
+#map svg {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+/* OVERLAY */
+
+.hero-overlay {
+
+    position: relative;
+
+    z-index: 10;
+
+    height: 100%;
+
+    background:
+      linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.72)
+      );
+}
+
+.hero-overlay .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 100%;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+
+    max-width: 720px;
+
+    color: white;
+}
+
+.hero-content h2 {
+
+    font-size: 3rem;
+
+    line-height: 1.3;
+
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 32px;
+
+    max-width: 680px;
+}
+
+/* LIVE THREAT PANEL */
+
+.live-threat-panel {
+
+    width: 360px;
+
+    background:
+      rgba(0,0,0,0.72);
+
+    border:
+      1px solid rgba(255,255,255,0.06);
+
+    border-radius: 24px;
+
+    backdrop-filter: blur(16px);
+
+    padding: 26px;
+
+    color: white;
+
+    box-shadow:
+      0 0 40px rgba(255,0,0,0.08);
+}
+
+.live-threat-panel h3 {
+
+    margin-bottom: 22px;
+
+    font-size: 24px;
+}
+
+.threat-item {
+
+    background:
+      rgba(255,255,255,0.03);
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    margin-bottom: 16px;
+
+    line-height: 1.6;
+}
+
+.threat-item.critical {
+    border-left: 5px solid #ff2b2b;
+}
+
+.threat-item.high {
+    border-left: 5px solid #ff8800;
+}
+
+.threat-item.medium {
+    border-left: 5px solid #ffd000;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .hero-overlay .container {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .hero-content h2 {
+
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+
+        font-size: 15px;
+    }
+
+    .live-threat-panel {
+
+        width: 100%;
+    }
 }
