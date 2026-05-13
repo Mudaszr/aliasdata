@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alias Data - Live Threat Map</title>
 
+  <link rel="stylesheet" href="threat-map.css" />
+</head>
+<body>
+
+  <div class="map-container">
+
+    <div class="header">
+      <h1>ALIAS DATA</h1>
+      <p>LIVE GLOBAL CYBER THREAT INTELLIGENCE</p>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="threat-feed">
+      <h2>LIVE THREATS</h2>
+
+      <div class="feed-item critical">
+        <span>CRITICAL</span>
+        Ransomware surge detected - Germany
+      </div>
+
+      <div class="feed-item high">
+        <span>HIGH</span>
+        Phishing campaign targeting India
+      </div>
+
+      <div class="feed-item medium">
+        <span>MEDIUM</span>
+        Botnet traffic spike - Brazil
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+
+  <script src="threat-data.js"></script>
+  <script src="threat-map.js"></script>
+
+</body>
+</html>
