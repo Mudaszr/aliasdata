@@ -68,3 +68,18 @@ body {
 .medium {
   border-color: #ffaa00;
 }
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    r: 6;
+    opacity: 1;
+  }
+
+  100% {
+    r: 25;
+    opacity: 0;
+  }
+}
