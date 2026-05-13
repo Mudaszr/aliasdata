@@ -1,3 +1,5 @@
+/* ================= RESET ================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +27,7 @@ body {
 /* ================= HEADER ================= */
 
 .site-header {
+
     background: rgba(255,255,255,0.92);
 
     backdrop-filter: blur(10px);
@@ -216,9 +219,9 @@ body {
     background:
       linear-gradient(
         90deg,
-        rgba(0,0,0,0.80) 0%,
-        rgba(0,0,0,0.45) 45%,
-        rgba(0,0,0,0.75) 100%
+        rgba(0,0,0,0.55) 0%,
+        rgba(0,0,0,0.20) 45%,
+        rgba(0,0,0,0.50) 100%
       );
 }
 
@@ -226,16 +229,18 @@ body {
 
     display: grid;
 
-    grid-template-columns: 1fr 360px;
+    grid-template-columns: 1fr 320px;
 
     align-items: center;
 
     gap: 60px;
 
     height: 100%;
+
+    padding-top: 80px;
 }
 
-/* HERO CONTENT */
+/* ================= HERO CONTENT ================= */
 
 .hero-content {
 
@@ -246,22 +251,26 @@ body {
 
 .hero-content h2 {
 
-    font-size: 3.2rem;
+    font-size: 2.6rem;
 
-    line-height: 1.3;
+    line-height: 1.25;
 
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+
+    max-width: 700px;
 }
 
 .hero-content p {
 
-    font-size: 18px;
+    font-size: 16px;
 
     line-height: 1.8;
 
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 
-    max-width: 680px;
+    max-width: 620px;
+
+    color: rgba(255,255,255,0.85);
 }
 
 /* BUTTON */
@@ -301,31 +310,28 @@ body {
 
 .live-threat-panel {
 
-    width: 360px;
+    width: 320px;
 
     background:
-      rgba(0,0,0,0.72);
+      rgba(0,0,0,0.62);
 
     border:
-      1px solid rgba(255,255,255,0.06);
+      1px solid rgba(255,255,255,0.05);
 
-    border-radius: 24px;
+    border-radius: 20px;
 
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(14px);
 
-    padding: 26px;
+    padding: 22px;
 
     color: white;
-
-    box-shadow:
-      0 0 40px rgba(255,0,0,0.08);
 
     justify-self: end;
 }
 
 .live-threat-panel h3 {
 
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 
     font-size: 24px;
 }
@@ -335,13 +341,15 @@ body {
     background:
       rgba(255,255,255,0.03);
 
-    padding: 18px;
+    padding: 14px;
 
-    border-radius: 14px;
+    border-radius: 12px;
 
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 
-    line-height: 1.6;
+    line-height: 1.5;
+
+    font-size: 14px;
 }
 
 .threat-item.critical {
