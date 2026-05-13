@@ -7,6 +7,14 @@ const svg = d3.select("#map")
   .attr("height", height)
   .style("background", "#050505");
 
+const zoom = d3.zoom()
+  .scaleExtent([1, 8])
+  .on("zoom", (event) => {
+    svg.selectAll("g")
+      .attr("transform", event.transform);
+  });
+
+svg.call(zoom);
 const projection = d3.geoMercator()
   .scale(140)
   .translate([width / 2, height / 1.5]);
