@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
   <title>Alias Data - Live Threat Map</title>
 
-  <link rel="stylesheet" href="/threat-map/threat-map.css">
+  <link rel="stylesheet"
+        href="/threat-map/threat-map.css">
+
 </head>
+
 <body>
 
-  <div class="map-container">
+  <!-- MAP -->
+  <div id="map"></div>
 
+  <!-- OVERLAY -->
+  <div class="overlay">
+
+    <!-- HEADER -->
     <div class="header">
+
       <h1>ALIAS DATA</h1>
-      <p>LIVE GLOBAL CYBER THREAT INTELLIGENCE</p>
+
+      <p>
+        LIVE GLOBAL CYBER THREAT INTELLIGENCE
+      </p>
+
     </div>
 
-    <div id="map"></div>
-
+    <!-- THREAT FEED -->
     <div class="threat-feed">
+
       <h2>LIVE THREATS</h2>
 
       <div class="feed-item critical">
-        <span>CRITICAL</span>
-        Ransomware surge detected - Germany
+        CRITICAL — Ransomware surge detected in Germany
       </div>
 
       <div class="feed-item high">
-        <span>HIGH</span>
-        Phishing campaign targeting India
+        HIGH — Phishing campaign targeting India
       </div>
 
       <div class="feed-item medium">
-        <span>MEDIUM</span>
-        Botnet traffic spike - Brazil
+        MEDIUM — Botnet traffic spike in Brazil
       </div>
 
     </div>
 
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
-  
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- TOPOJSON -->
+  <script src="https://unpkg.com/topojson-client@3"></script>
+
+  <!-- DATA -->
   <script src="/threat-map/threat-data.js"></script>
+
+  <!-- MAP -->
   <script src="/threat-map/threat-map.js"></script>
 
 </body>
+
 </html>
