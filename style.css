@@ -469,24 +469,17 @@ footer {
       );
 }
 
-.hero-overlay .container {
 
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    height: 100%;
-}
 
 /* HERO CONTENT */
 
 .hero-content {
 
-    max-width: 720px;
-
     color: white;
+
+    max-width: 760px;
+
+    margin: 0 auto;
 }
 
 .hero-content h2 {
