@@ -92,6 +92,48 @@ nav a:hover::after {
 nav a:hover {
     color: #1877f2;
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+
+    background: white;
+
+    flex-direction: column;
+
+    width: 220px;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    display: none;
+
+    box-shadow:
+      0 10px 40px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 
 /* ================= HERO ================= */
 
