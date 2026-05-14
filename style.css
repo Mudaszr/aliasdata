@@ -473,71 +473,66 @@ footer {
         rgba(0,0,0,0.50) 100%
       );
 }
+/* HERO LAYOUT */
 
 .hero-overlay .container {
 
     position: relative;
 
+    height: 100%;
+
     display: flex;
 
     align-items: center;
 
-    justify-content: flex-start;
-
-    height: 100%;
-
-    padding-top: 100px;
+    justify-content: center;
 }
 
-/* HERO CONTENT */
+/* CENTER CONTENT */
 
 .hero-content {
 
     position: relative;
 
-    z-index: 15;
+    z-index: 20;
 
-    max-width: 720px;
+    max-width: 760px;
+
+    text-align: center;
 
     color: white;
 }
 
 .hero-content h2 {
 
-    font-size: 2.6rem;
+    font-size: 4rem;
 
-    line-height: 1.25;
+    line-height: 1.15;
 
-    margin-bottom: 20px;
-
-    max-width: 700px;
+    margin-bottom: 24px;
 }
 
 .hero-content p {
 
-    font-size: 16px;
+    max-width: 720px;
+
+    margin: 0 auto 30px;
 
     line-height: 1.8;
 
-    margin-bottom: 28px;
-
-    max-width: 620px;
-
-    color: rgba(255,255,255,0.85);
+    color: rgba(255,255,255,0.88);
 }
 
-/* BUTTON */
+/* CENTER BUTTON */
 
-.hero-content .btn {
+.hero-btn-wrap {
 
-    display: inline-flex;
+    display: flex;
 
     justify-content: center;
-
-    align-items: center;
 }
 
-/* LIVE THREAT PANEL */
+/* FLOATING THREAT PANEL */
 
 .live-threat-panel {
 
@@ -545,15 +540,13 @@ footer {
 
     left: 40px;
 
-    bottom: 60px;
+    bottom: 50px;
 
     width: 320px;
 
-    background:
-      rgba(0,0,0,0.62);
+    background: rgba(0,0,0,0.62);
 
-    border:
-      1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.06);
 
     border-radius: 20px;
 
@@ -563,83 +556,16 @@ footer {
 
     color: white;
 
-    z-index: 20;
+    z-index: 30;
 }
 
-.live-threat-panel h3 {
-
-    margin-bottom: 20px;
-
-    font-size: 24px;
-}
-
-.threat-item {
-
-    background:
-      rgba(255,255,255,0.03);
-
-    padding: 14px;
-
-    border-radius: 12px;
-
-    margin-bottom: 14px;
-
-    line-height: 1.5;
-
-    font-size: 14px;
-}
-
-.threat-item.critical {
-    border-left: 5px solid #ff2b2b;
-}
-
-.threat-item.high {
-    border-left: 5px solid #ff8800;
-}
-
-.threat-item.medium {
-    border-left: 5px solid #ffd000;
-}
-
-/* ================= LIVE MAP MOBILE ================= */
+/* MOBILE */
 
 @media (max-width: 900px) {
 
-    .hero-map {
-
-        min-height: 100vh;
-
-        height: auto;
-    }
-
-    .hero-overlay .container {
-
-        flex-direction: column;
-
-        justify-content: center;
-
-        gap: 40px;
-
-        text-align: center;
-
-        padding-top: 140px;
-
-        padding-bottom: 60px;
-    }
-
-    .hero-content {
-
-        margin: 0 auto;
-    }
-
     .hero-content h2 {
 
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-
-        font-size: 15px;
+        font-size: 2.2rem;
     }
 
     .live-threat-panel {
@@ -653,5 +579,14 @@ footer {
         width: 100%;
 
         margin-top: 30px;
+    }
+
+    .hero-overlay .container {
+
+        flex-direction: column;
+
+        padding-top: 120px;
+
+        padding-bottom: 60px;
     }
 }
